@@ -10,7 +10,7 @@ GITHUB_REPO_PATH = "./top-donators"  # Lokaliai klonuotas GitHub Pages repo
 
 # Gaunam donacijas
 def get_donations():
-    url = f"https://streamlabs.com/api/v1.0/donations?access_token={STREAMLABS_TOKEN}&limit=100"
+    url = f"https://streamlabs.com/api/v1.0/donations?access_token={STREAMLABS_TOKEN}&limit=10"
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
